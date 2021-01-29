@@ -35,7 +35,7 @@ class ImageProcessor():
         """ a method for add watermark to picture. """
 
 
-        if self.im.size[0] < self.logoIm.size[0] or self.im.size[1] < self.logoIm.size[1]: #* Check the image size relative to the watermark to resize.
+        if (self.im.size[0] < self.logoIm.size[0]) or (self.im.size[1] < self.logoIm.size[1]): #* Check the image size relative to the watermark to resize.
             self.logoIm = self.logoIm.resize((50, 50)) #! Resize watermark to (50,50). Do not change it.
             seg = (self.width-65, self.height-66) #! Change position. Do not change it.
 

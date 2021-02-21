@@ -95,7 +95,11 @@ def robot_handler(msg):
 
 
 if __name__ == "__main__": #* Check to see it is entered as a library.
-    me = bot.getMe() #* Get information about the robot.
+    try:
+        me = bot.getMe() #* Get information about the robot.
+    except telepot.exception.UnauthorizedError:
+        print(Fore.RED+"UnauthorizedError"+Fore.RESET)
+        sys.exit(1)
 
     """ Print information"""
 

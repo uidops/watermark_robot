@@ -114,7 +114,9 @@ if __name__ == "__main__": #* Check to see it is entered as a library.
 
     try:
         while 1:
-            time.sleep(20) #! Sleep for 20 seconds. Do not change it.
+            for file in os.scandir("./temp"):
+                os.remove(file.path)
+            time.sleep(18000) #! Sleep for 5h.
 
     except KeyboardInterrupt: #* Prevent error when receiving Interrupt signal. 
         sys.exit("\n") #* Print a new line and exit from script.

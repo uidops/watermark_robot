@@ -25,6 +25,6 @@ $ python3 app.py
 
 Docker:
 ``` bash
-# docker build -t watermark .
-# docker run -rm watermark
+$ sudo docker build -t watermark .
+$ sudo docker run -rm watermark
 ```

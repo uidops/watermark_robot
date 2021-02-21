@@ -83,7 +83,7 @@ def robot_handler(msg):
 
 
     bot.download_file(file_id=media_id, dest=file_name) #* Download file from Telegram server.
-    img = ImageProcessor(file_name) #* Initialization image processing, 
+    img = ImageProcessor(file_name) #* Initialization image processing,
     img.add_watermark() #* add watermark to picture.
 
     if "document" in msg.keys(): #* Check that the picture should be sent as a file or photo.
@@ -95,6 +95,9 @@ def robot_handler(msg):
 
 
 if __name__ == "__main__": #* Check to see it is entered as a library.
+    if ! os.path.isdir("temp"):
+        os.mkdir("temp")
+
     try:
         me = bot.getMe() #* Get information about the robot.
     except telepot.exception.UnauthorizedError:
@@ -116,6 +119,6 @@ if __name__ == "__main__": #* Check to see it is entered as a library.
                 os.remove(file.path)
             time.sleep(18000) #! Sleep for 5h.
 
-    except KeyboardInterrupt: #* Prevent error when receiving Interrupt signal. 
+    except KeyboardInterrupt: #* Prevent error when receiving Interrupt signal.
         sys.exit("\n") #* Print a new line and exit from script.
 

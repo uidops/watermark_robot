@@ -3,6 +3,7 @@
 
 import sys  #* System-specific parameters and functions.
 import time  #* Time access and conversions.
+import os #* Miscellaneous operating system interfaces.
 
 import telepot  #* Python framework for Telegram Bot API.
 import telepot.loop  #* Python framework for Telegram Bot API message loop handler.

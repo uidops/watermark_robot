@@ -98,16 +98,9 @@ if __name__ == "__main__": #* Check to see it is entered as a library.
     me = bot.getMe() #* Get information about the robot.
 
     """ Print information"""
-    print(Fore.YELLOW+"{"+Fore.RESET)
 
     for i in me.keys():
-        if list(me.keys())[-1] == i:
-            print(Fore.MAGENTA+"\t\"{}\":\"{}\"".format(i, me[i])+Fore.RESET)
-
-        else:
-            print(Fore.MAGENTA+"\t\"{}\":\"{}\",".format(i, me[i])+Fore.RESET)
-
-    print(Fore.YELLOW+"}"+Fore.RESET)
+        print(Fore.MAGENTA+"\t{}: {}{}".format(i, Fore.LIGHTBLUE_EX ,me[i])+Fore.RESET)
 
     telepot.loop.MessageLoop(bot, robot_handler).run_as_thread() #! Run a robot loop to receive and process messages and execute them as threads. Do not change it
 

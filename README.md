@@ -1,9 +1,9 @@
 <div align="center"><img src="https://github.com/siruidops/watermark_robot/raw/main/.tmp/text.gif"/>
 
-![License](https://img.shields.io/badge/license-GPL-blue) ![Status](https://img.shields.io/badge/state-success-cyan) ![Language](https://img.shields.io/badge/language-Python-purple)
+![License](https://img.shields.io/badge/license-GPL-blue) ![Status](https://img.shields.io/badge/Archive-cyan) ![Language](https://img.shields.io/badge/language-Python-purple)
 </div>
 
-# Telegram Robot: Add watermark to photo
+# Telegram Bot: Add watermark to photo
 
 Dependencies:
 ```
@@ -13,10 +13,10 @@ pip
 
 Install requirements:
 ``` bash
-$ sudo pip3 install -r requirements.txt
+$ python3 -m pip install --user -r requirements.txt
 ```
 
-! Edit api in script.
+! Edit bot API in script.
 
 Usage:
 ``` bash
@@ -25,6 +25,6 @@ $ python3 app.py
 
 Docker:
 ``` bash
-$ sudo docker build -t watermark .
-$ sudo docker run -rm watermark
+$ docker build -t watermark .
+$ docker run -rm watermark
 ```

@@ -3,7 +3,7 @@
 ![License](https://img.shields.io/badge/license-GPL-blue) ![Status](https://img.shields.io/badge/Archive-cyan) ![Language](https://img.shields.io/badge/language-Python-purple)
 </div>
 
-# Telegram Bot: Add watermark to photo
+# Telegram bot: Add watermark to photo
 
 Dependencies:
 ```

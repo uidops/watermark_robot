@@ -16,7 +16,7 @@ Install requirements:
 $ python3 -m pip install --user -r requirements.txt
 ```
 
-! Edit bot API in script.
+! Edit bot API in script and logo
 
 Usage:
 ``` bash
